@@ -5,20 +5,20 @@
 class Glcron < Formula
   desc "A TUI tool for managing GitLab CI/CD pipeline schedules"
   homepage "https://github.com/nikitasova/glcron"
-  version "0.1.0-beta"
+  version "0.1.1-beta"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nikitasova/glcron/releases/download/v0.1.0-beta/glcron_0.1.0-beta_darwin_amd64.tar.gz"
-      sha256 "be2b99234db256304d05cb1595f4867cf0ba956b50e3869678b823d0ad59cd36"
+      url "https://github.com/nikitasova/glcron/releases/download/v0.1.1-beta/glcron_0.1.1-beta_darwin_amd64.tar.gz"
+      sha256 "67ccc2a8e0639e19b82f5e8c3af5bc092c7e9a045ab39b8945439cf63bfb2530"
 
       def install
         bin.install "glcron"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nikitasova/glcron/releases/download/v0.1.0-beta/glcron_0.1.0-beta_darwin_arm64.tar.gz"
-      sha256 "e9d3601d56e195f27aebb68edd01435b7c65ed7fd989f65868a8107d4cac7d79"
+      url "https://github.com/nikitasova/glcron/releases/download/v0.1.1-beta/glcron_0.1.1-beta_darwin_arm64.tar.gz"
+      sha256 "ba4f87fe4b654fc6ca01d3554659eeb79aa7176bbc4ce204b8e72a49ded3305a"
 
       def install
         bin.install "glcron"
@@ -28,15 +28,15 @@ class Glcron < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nikitasova/glcron/releases/download/v0.1.0-beta/glcron_0.1.0-beta_linux_amd64.tar.gz"
-      sha256 "d0787fc4bd723345d1ec4301673a7613f696d454a4abf28b9a12dd1631ff83fd"
+      url "https://github.com/nikitasova/glcron/releases/download/v0.1.1-beta/glcron_0.1.1-beta_linux_amd64.tar.gz"
+      sha256 "7b00e0238893291d5254901b016eafab32c13b3e70c06698bce8f64aab40b6ba"
       def install
         bin.install "glcron"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nikitasova/glcron/releases/download/v0.1.0-beta/glcron_0.1.0-beta_linux_arm64.tar.gz"
-      sha256 "7725f0ce59755bd14d426716e03359fc1e7caa345ccc313fde4053a682aaf89a"
+      url "https://github.com/nikitasova/glcron/releases/download/v0.1.1-beta/glcron_0.1.1-beta_linux_arm64.tar.gz"
+      sha256 "f589ab998d5eb1f57455ebb300bfd3770e1347ea32cc8c08a5769a6207d61c50"
       def install
         bin.install "glcron"
       end
