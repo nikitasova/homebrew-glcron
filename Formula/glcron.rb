@@ -10,7 +10,7 @@ class Glcron < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/nikitasova/glcron/releases/download/v0.1.2-beta/glcron_0.1.2-beta_darwin_amd64.tar.gz"
-      sha256 "e83ed7dca31366265bbfd39ff8b224d7a56b25256d2fd047eeebc23bd3e4a63d"
+      sha256 "3e3f9ac21c5ddbcb01c3c7235699f8cc2089acb8ce8dac56874988b31a85ddc8"
 
       def install
         bin.install "glcron"
@@ -18,7 +18,7 @@ class Glcron < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/nikitasova/glcron/releases/download/v0.1.2-beta/glcron_0.1.2-beta_darwin_arm64.tar.gz"
-      sha256 "b80e06f466597dee35055d212609e1171d83a83da61b15ffd4f2d62031dc91b9"
+      sha256 "522e2c1403b4d9bc00ee7525cec581bd8e39e0570631edaf6c333596b66eff23"
 
       def install
         bin.install "glcron"
@@ -29,14 +29,14 @@ class Glcron < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/nikitasova/glcron/releases/download/v0.1.2-beta/glcron_0.1.2-beta_linux_amd64.tar.gz"
-      sha256 "5be33d5064b394ef9aec67ac6d06bfe08d700bd7e147adea6e709cb5c909583a"
+      sha256 "db5176f740ca0b1027b228579a403ac2591e04194e4b764d61b979b392798a8a"
       def install
         bin.install "glcron"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/nikitasova/glcron/releases/download/v0.1.2-beta/glcron_0.1.2-beta_linux_arm64.tar.gz"
-      sha256 "2017a97a09e646f3b6b119f34922579b10f0ea46973d5723c53d4f7d1142f184"
+      sha256 "b0d069af4637a5b4cb24fbe4546b0f7fe0fbaf38b9f3d07e4fec7674c432d70a"
       def install
         bin.install "glcron"
       end
