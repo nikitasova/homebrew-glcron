@@ -5,20 +5,20 @@
 class Glcron < Formula
   desc "A TUI tool for managing GitLab CI/CD pipeline schedules"
   homepage "https://github.com/nikitasova/glcron"
-  version "0.1.5"
+  version "1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nikitasova/glcron/releases/download/v0.1.5/glcron_0.1.5_darwin_amd64.tar.gz"
-      sha256 "c0e4586278289cb1841fb72c14b5563fe1b9f02c085dcdd96238932de5544a6e"
+      url "https://github.com/nikitasova/glcron/releases/download/v1.1/glcron_1.1_darwin_amd64.tar.gz"
+      sha256 "66316dbae12509d6ebca649e56bde32a99538bfa3e72a5bb2fb5648a4834600f"
 
       def install
         bin.install "glcron"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nikitasova/glcron/releases/download/v0.1.5/glcron_0.1.5_darwin_arm64.tar.gz"
-      sha256 "54303d495644491c78eb4e022f4e4fd0fc52b6d4f01ab92bc9f059c8439226ea"
+      url "https://github.com/nikitasova/glcron/releases/download/v1.1/glcron_1.1_darwin_arm64.tar.gz"
+      sha256 "2cc4d9235ec30b68efaf05407e5a098be751971ed68d75e5f8c911e3bddba201"
 
       def install
         bin.install "glcron"
@@ -28,15 +28,15 @@ class Glcron < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nikitasova/glcron/releases/download/v0.1.5/glcron_0.1.5_linux_amd64.tar.gz"
-      sha256 "0e5f25cc12e671c5c7cf4baae678ac47544c71b749ec380655bcb6b67121cfcb"
+      url "https://github.com/nikitasova/glcron/releases/download/v1.1/glcron_1.1_linux_amd64.tar.gz"
+      sha256 "c7eff448acca06bad3e24d7dc96efc6e144d139b3ef8996c75aeb63840b2391c"
       def install
         bin.install "glcron"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nikitasova/glcron/releases/download/v0.1.5/glcron_0.1.5_linux_arm64.tar.gz"
-      sha256 "81dc0a748eaf179fdf94ba0e9d7e67c1701db0e0e89494e0f71877b29077f63c"
+      url "https://github.com/nikitasova/glcron/releases/download/v1.1/glcron_1.1_linux_arm64.tar.gz"
+      sha256 "e428703bdee418da41d2cccdeee9417e7c4e8a3933a5d1d6de6fdc2810d6df48"
       def install
         bin.install "glcron"
       end
