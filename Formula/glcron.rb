@@ -5,20 +5,20 @@
 class Glcron < Formula
   desc "A TUI tool for managing GitLab CI/CD pipeline schedules"
   homepage "https://github.com/nikitasova/glcron"
-  version "1.1"
+  version "1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nikitasova/glcron/releases/download/v1.1/glcron_1.1_darwin_amd64.tar.gz"
-      sha256 "f00f4f034cd482d35ab7db2ad5a69ee3dac23c4ca798d77a66573593a8334c52"
+      url "https://github.com/nikitasova/glcron/releases/download/v1.2/glcron_1.2_darwin_amd64.tar.gz"
+      sha256 "a613f882137fbcc3b5416ac7dc7785caef99341213d5603b108d9a99a30ef62f"
 
       def install
         bin.install "glcron"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nikitasova/glcron/releases/download/v1.1/glcron_1.1_darwin_arm64.tar.gz"
-      sha256 "04b768eff42810a8f6278385be2f6dbe16f600a4d3b08b65f0a766bd41d50c52"
+      url "https://github.com/nikitasova/glcron/releases/download/v1.2/glcron_1.2_darwin_arm64.tar.gz"
+      sha256 "a8bc1b841eca311faf84478e2f116920fbdcd0ab28f16d64cc67bf13ede2cfe2"
 
       def install
         bin.install "glcron"
@@ -28,15 +28,15 @@ class Glcron < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nikitasova/glcron/releases/download/v1.1/glcron_1.1_linux_amd64.tar.gz"
-      sha256 "252425b4892abb5da7c50ebf75c87ccc807bb1303d4c30aee2689c7047fac9f4"
+      url "https://github.com/nikitasova/glcron/releases/download/v1.2/glcron_1.2_linux_amd64.tar.gz"
+      sha256 "52221dedfb71c7a072887c41c4001a706879019a51524ab639f9dba16f265f99"
       def install
         bin.install "glcron"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nikitasova/glcron/releases/download/v1.1/glcron_1.1_linux_arm64.tar.gz"
-      sha256 "ed9cff5d54e9cc3e8bc5bfc2baf392a5b1fa3dec0f949952e05a58e6b3baa883"
+      url "https://github.com/nikitasova/glcron/releases/download/v1.2/glcron_1.2_linux_arm64.tar.gz"
+      sha256 "09abb1b8d8833bd2e546c979e448ca2f47a4d6651ece65c4a5d0957140fb34d5"
       def install
         bin.install "glcron"
       end
