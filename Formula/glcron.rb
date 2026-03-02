@@ -5,22 +5,22 @@
 class Glcron < Formula
   desc "A TUI tool for managing GitLab CI/CD pipeline schedules"
   homepage "https://github.com/nikitasova/glcron"
-  version "1.4"
+  version "1.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nikitasova/glcron/releases/download/v1.4/glcron_1.4_darwin_amd64.tar.gz"
-      sha256 "a8853e1713b49f267b5fd62f8f73ec5c8fb976d32384100531a222ac3300a49a"
+      url "https://github.com/nikitasova/glcron/releases/download/v1.5/glcron_1.5_darwin_amd64.tar.gz"
+      sha256 "b6848390675a329913441062b135e1fbdb06ccc20195994307d63837aa26e4d8"
 
-      def install
+      define_method(:install) do
         bin.install "glcron"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nikitasova/glcron/releases/download/v1.4/glcron_1.4_darwin_arm64.tar.gz"
-      sha256 "177476a749c4d6c55350e87ba8cf142648408b2f56fafe00412b39cd72b28a1b"
+      url "https://github.com/nikitasova/glcron/releases/download/v1.5/glcron_1.5_darwin_arm64.tar.gz"
+      sha256 "906ab33ddc23e09908fa7e1e5920b38ab422bb88373b4bb0c7987f2e361b9ec0"
 
-      def install
+      define_method(:install) do
         bin.install "glcron"
       end
     end
@@ -28,16 +28,16 @@ class Glcron < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nikitasova/glcron/releases/download/v1.4/glcron_1.4_linux_amd64.tar.gz"
-      sha256 "0e135b17d4b8c9efc2bb6a33fabeafc505da2808407ba2d2414db7a68721f1cc"
-      def install
+      url "https://github.com/nikitasova/glcron/releases/download/v1.5/glcron_1.5_linux_amd64.tar.gz"
+      sha256 "3a8e19dce77075ccb64400c28cc5aed4ac854806a8df3c5e1899770f8b5c5b3c"
+      define_method(:install) do
         bin.install "glcron"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nikitasova/glcron/releases/download/v1.4/glcron_1.4_linux_arm64.tar.gz"
-      sha256 "a6d6d660dae808e5fcb7d966757f92a2cad62860cbe79c85c8bd972194b6b0e0"
-      def install
+      url "https://github.com/nikitasova/glcron/releases/download/v1.5/glcron_1.5_linux_arm64.tar.gz"
+      sha256 "407383dd63c05b8be1ea5fcf3b5bd11cefa605edd3d09edffeb818e7b4060e04"
+      define_method(:install) do
         bin.install "glcron"
       end
     end
